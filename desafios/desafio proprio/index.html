@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cara com animaçao</title>
+    <style>
+        body {
+            background-color: lightgray;
+        }
+        div#bola {
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        div#olho {
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            margin: 40px;
+            background-color: black;
+            border-radius: 51%;
+        }
+        div#boca {
+            display: inline-block;
+            height: 50px;
+            width: 240px;
+            border-radius: 100px;
+            background-color: red;
+        }
+        div#boca > div#dente1 {
+            display: none;
+            height: 20px;
+            width: 20px;
+            margin: 0.4px;
+            margin-left: 90px; 
+            background-color: white;
+            border-radius: 0px;
+        }
+        div#boca > div#dente2 {
+            display: none;
+            height: 20px;
+            width: 20px;
+            margin: 0.4px;
+            margin-left: 10px; 
+            background-color: white;
+            border-radius: 0px;
+        }
+        div#boca > div#lingua {
+            display: none;
+            height: 90px;
+            width: 95px;
+            margin: 10px;
+            margin-left: 75px; 
+            background-color: rgb(179, 9, 9);
+            color: white;
+            border-radius: 0px;
+            text-align: center;
+            
+
+        }
+        div#boca:hover > div#dente1 {
+            display: inline-block;
+        }
+        div#boca:hover > div#dente2 {
+            display: inline-block;
+        }
+        div#boca:hover > div#lingua {
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="bola">
+        <div id="olho"></div>
+    </div>
+    <div id="bola">
+        <div id="olho"></div>
+    </div>
+    <br>
+    <div id="boca">
+        <div id="dente1"></div>
+        <div id="dente2"></div>
+        <br>
+        <div id="lingua">cara de otaria</div>
+    </div>
+</body>
+</html>

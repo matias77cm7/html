@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(70, 69, 69);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.486);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(151, 151, 151);
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 1px 1px 3px rgb(0, 0, 0);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        div#olho {
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            margin: 40px;
+            background-color: black;
+            border-radius: 51%;
+        }
+    </style>
+</head>
+<body> <!-- corpo-->
+    <header> <!-- cabecalho-->
+        <h1>Meu site</h1>
+        <nav> <!-- navegaçao-->
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+        </nav>
+    </header> 
+    <main> <!-- conteudo principaç-->
+        <section id="assuntos"> <!-- seçoes--> 
+            <p>Esportes</p>
+        </section>
+        <section id="noticias">
+            <article> <!-- artigos--> 
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quam rem quasi, nihil impedit repudiandae pariatur dolorum error magnam earum! Ad ea iusto accusantium exercitationem blanditiis, veritatis nesciunt eius voluptate.</p>
+                <aside> 
+                    <p>Artigo escrito por Jose da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer> <!-- final rodape-->
+        <p>Desenvolvido pelo Matias</p>
+    </footer>
+    <div id="bola">
+        <div id="olho"></div>
+    </div>
+    <div id="bola">
+        <div id="olho"></div>
+    </div>
+</body>
+</html>
